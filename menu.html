@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Harshdeep Singh
+    Student Number 200555911
+    I am creating a pizza website called PizzazZap.
+    I will be creating two pages for the website,
+    This is page 2 - Menu Page-->
+
+<!--All necessary meta elements-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assignment 2 Pizza Website">
+    <meta name="robots" content="noindex, nofollow">
+    <!--Linking our CSS and fonts-->
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:ital,wght@1,200&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>PizzazZap - Menu</title>
+</head>
+
+<!--Body of the webpage-->
+<body>
+    <header>
+        <!--Adding our logo-->
+        <div class="logo">
+            <a href="index.html"> <img src="./img/pizzazZap_logo.png" alt="PizzazZap"></a>
+        </div>
+        <!--A list of navigation links-->
+        <nav>
+            <menu>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Sign In</a></li>
+            </menu>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Main content of menu page begins -->
+        <h1>Our Menu</h1>
+        <section class="menu-section">
+            <!--Creating our menu items with images and figcaptions-->
+            
+            <div class="menu-item">
+                <div class="item-image">
+                    <img src="./img/pizza2.jpeg" alt="Pizza 1">
+                </div>
+                <div class="item-content">
+                    <h2>Pepperoni Pizza</h2>
+                    <p>Classic pepperoni pizza topped with mozzarella cheese and tomato sauce.</p>
+                    <p class="price">$12.99</p>
+                    <a href="#" class="item-link">Order Now</a>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-image">
+                    <img src="./img/pizza1.jpeg" alt="Pizza 2">
+                </div>
+                <div class="item-content">
+                    <h2>Margherita Pizza</h2>
+                    <p>Traditional Italian pizza with fresh tomatoes, mozzarella, and basil.</p>
+                    <p class="price">$11.99</p>
+                    <a href="#" class="item-link">Order Now</a>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-image">
+                    <img src="./img/pizza3.jpeg" alt="Pizza 3">
+                </div>
+                <div class="item-content">
+                    <h2>Hawaiian Pizza</h2>
+                    <p>Delicious pizza with ham, pineapple, and mozzarella cheese.</p>
+                    <p class="price">$13.99</p>
+                    <a href="#" class="item-link">Order Now</a>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-image">
+                    <img src="./img/pizza4.jpeg" alt="Pizza 4">
+                </div>
+                <div class="item-content">
+                    <h2>Chicken Pizza</h2>
+                    <p>Delicious pizza with Chicken, bell-pepers, and mozzarella cheese.</p>
+                    <p class="price">$13.99</p>
+                    <a href="#" class="item-link">Order Now</a>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-image">
+                    <img src="./img/pizza6.jpg" alt="Pizza 6">
+                </div>
+                <div class="item-content">
+                    <h2>Deluxe Pizza</h2>
+                    <p>Delicious pizza with veges, jalepanos, mozzarella cheese and meats of your choice.</p>
+                    <p class="price">$13.99</p>
+                    <a href="#" class="item-link">Order Now</a>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-image">
+                    <img src="./img/pizza5.jpeg" alt="Pizza 5">
+                </div>
+                <div class="item-content">
+                    <h2>Mushroom n Cheese Pizza</h2>
+                    <p>Delicious pizza with Chillies, Mushrooms, and mozzarella cheese.</p>
+                    <p class="price">$9.99</p>
+                    <a href="#" class="item-link" id="form-link">Order Now</a>
+                </div>
+            </div>   
+        </section>
+        <!--Form begins from here-->
+        <section class="form-section">
+        <form action="#" method="post">
+            <!--Asking for user information-->
+            <h2>Your information</h2>
+            <br>
+            <div class="form-grid">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div>
+                    <label for="postal-code">Postal Code</label>
+                    <input type="text" id="postal-code" name="Your postal-code" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div>    
+                    <label>Would you like to receive notifications for latest offers and deals?</label>
+                    <input type="checkbox" id="notifications" name="notifications">
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                </div>
+                <div>
+            <label for="province">Province</label>
+            <input type="text" id="province" name="province" required>
+        </div>
+    </div>
+    <!--Asking for Customization-->
+    <h2>Customize Your Pizza!</h2>
+    <br>
+        <div>
+            <div>
+                <label for="size">Size:</label>
+                <br>                
+                <input type="radio" id="regular" name="size" value="regular" checked>
+                <label for="regular">Regular</label>                
+                <input type="radio" id="medium" name="size" value="medium">
+                <label for="medium">Medium</label>                
+                <input type="radio" id="large" name="size" value="large">
+                <label for="large">Large</label>
+                <input type="radio" id="party" name="size" value="party">
+                <label for="party">Party</label>
+                <br>
+                <br>
+                <label for="crust">Crust:</label>
+                <br>                
+                <input type="radio" id="italian" name="crust" value="italian" checked>
+                <label for="italian">Italian</label>
+                <input type="radio" id="hand-tossed" name="crust" value="hand-tossed">
+                <label for="hand-tossed">Hand-Tossed</label>
+            </div>
+            <br>
+            <br>
+            <div>
+                <label>Toppings:</label>
+                <br>
+                <input type="checkbox" id="pepperoni" name="toppings[]" value="pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+                <input type="checkbox" id="mushrooms" name="toppings[]" value="mushrooms">
+                <label for="mushrooms">Mushrooms</label>
+                <input type="checkbox" id="onions" name="toppings[]" value="onions">
+                <label for="onions">Onions</label>
+                <input type="checkbox" id="sausage" name="toppings[]" value="sausage">
+                <label for="sausage">Sausage</label>
+            </div>
+            <br>
+            <br>
+            <div>
+                <label>Extra Cheese:</label>
+                <br>
+                <input type="checkbox" id="extra-cheese" name="extra-cheese" value="yes">
+                <label for="extra-cheese">Yes</label>
+            </div>
+
+            </div>
+                <input type="submit" value="Place Order">
+                </form>
+    </section>
+    </main>
+<!--footer ends-->
+    <footer>
+        <p>&copy; 2023 PizzazZap. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
